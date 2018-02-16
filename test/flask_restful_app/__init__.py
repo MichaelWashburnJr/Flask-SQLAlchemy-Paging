@@ -6,7 +6,7 @@ from flask import Flask
 from flask_restful import Api
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask
-from database import configure_db
+from .database import configure_db
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
@@ -15,8 +15,9 @@ configure_db(app)
 
 api = Api(app)
 
-import resources
-api.add_resource(resources.People, '/people')
+from . import resources
+api.add_resource(resources.PeopleWithFunction, '/people1')
+api.add_resource(resources.PeopleWithDecorator, '/people2')
 
 
 if __name__ == '__main__':

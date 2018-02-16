@@ -2,7 +2,7 @@
 Defines models used by the test app resources.
 """
 from sqlalchemy.ext.declarative import declarative_base
-from database import db
+from .database import db
 
 class Person(db.Model):
     """

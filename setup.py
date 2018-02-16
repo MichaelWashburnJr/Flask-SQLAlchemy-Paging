@@ -8,12 +8,13 @@ setup(
     author_email='michael@michaelwashburnjr.com',
     url='https://github.com/MichaelWashburnJr/Flask-SQLAlchemy-Paging',
     packages=find_packages('src'),
+    package_dir={'':'src'},
     install_requires=[
+        'Flask==0.12.2',
+        'Flask-RESTful==0.3.6',
     ],
     tests_require=[
         'nose==1.3.7',
-        'Flask==0.12.2',
-        'Flask-RESTful==0.3.6',
         'Flask-SQLAlchemy==2.3.2',
         'SQLAlchemy==1.2.2',
     ],
