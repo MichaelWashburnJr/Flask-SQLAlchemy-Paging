@@ -36,7 +36,7 @@ GET /people?limit=1&page=0
     }
   ]
 }
-
+```
 So why would you want to page your API requests?
 
 - If your requests take too much time
