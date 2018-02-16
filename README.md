@@ -42,6 +42,7 @@ So why would you want to page your API requests?
 - If your requests take too much time
 - AND if you can't reduce the size of the objects being returned
 - AND if gzip compression isn't good enough
+- AND if caching isn't good enough
 
 ## Usage
 
