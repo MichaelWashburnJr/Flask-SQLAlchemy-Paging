@@ -1,10 +1,15 @@
 language: python
 python:
-  - "3.5"
-  - "3.6"
-# command to install dependencies
+- '3.5'
+- '3.6'
 install:
-  - pip install -e .[test]
-# command to run tests
+- pip install -e .[test]
 script:
-  - python -m "nose"
+- python -m "nose"
+deploy:
+  provider: pypi
+  user: mike_burn
+  password:
+    secure: Mt625RojNvtIR5VoA1wRL6btp/UIiVPOLth9mutZm1QDach4d3/+vKeT9hvN9sJqwuMjAs7+xodAZ9TUljKJHE5xItNGnZBgUFqDcTwDY0w2wgRBNkvX0nVKWIAHuGPOklnT2vYmD6iflPPVRiaIElDRCcPsRBHK92IN9XyamzjZm6cpYJNi5TxPIyPWFtdWGB55cGj12GbXrbFC9rMlm7gEnqLMzQ/GAlLiLlxzDRxlfiAOdZ1wZip83kLfDuY5WBngNCQCqo5mHTjdPHOMbtYsq84cBD3Vhyum6iLcFga9q8NQV0cytyXd0EEOjsBQHx0K2NO1fxHAOJjhlpYKfryGDeIvTXjucG6ogAZo1jW6oM3YmVNv+zpO8gZFNM2RxWIFpduGPVP1RSAQOxSxbHAZOabi+eVVoNS0LfLhHc4OKULnKSZy1CecDWHbCOla7fe0LC+VfjQ3XhdhyeYmL6gewXXG1S4FiaClUYRchZUohNxGYUcg4wXq0dy9sFzgH2637pDd7oAW5rcinowHYca7fEP0PAvSYHHs4z4AKxuzSfhcrhrr8m/ut6Y63QG05XXJememMg6hZ2nC9jdIYzxuihpyWWg76y06rIATKbcj/Uw1jyqvLiOvDQzSBMWbQEi252DW/SHPa0LU4yhALHiaG7aYyCPGC+fkcUqokeE=
+  on:
+    branch: master
