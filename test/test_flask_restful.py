@@ -30,11 +30,11 @@ class TestFlaskApi(unittest.TestCase):
     def test_people_with_function(self):
         response = self.app.get('/people1')
         self.assertEqual(response.status_code, 200)
-        results = json.loads(response.get_data())
+        results = json.loads(response.get_data().decode('utf-8'))
         self.assertTrue(len(results) > 0)
 
-    # def test_people_with_decorator(self):
-    #     response = self.app.get('/people2')
-    #     self.assertEqual(response.status_code, 200)
-    #     results = json.loads(response.get_data())
-    #     self.assertTrue(len(results) > 0)
+    def test_people_with_decorator(self):
+        response = self.app.get('/people2')
+        self.assertEqual(response.status_code, 200)
+        results = json.loads(response.get_data().decode('utf-8'))
+        self.assertTrue(len(results) > 0)
