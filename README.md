@@ -1,4 +1,5 @@
-# Flask-SQLAlchemy-Paging
+# Flask-SQLAlchemy-Paging ![status](https://travis-ci.org/MichaelWashburnJr/Flask-SQLAlchemy-Paging.svg?branch=master)
+
 Painless Paged API Endpoints with Flask and SQLAlchemy
 
 ## Description
