@@ -12,10 +12,13 @@ setup(
     install_requires=[
         'Flask==0.12.2',
         'Flask-RESTful==0.3.6',
-    ],
-    tests_require=[
-        'nose==1.3.7',
         'Flask-SQLAlchemy==2.3.2',
         'SQLAlchemy==1.2.2',
+        'requests==2.18.4',
     ],
+    extras_require={
+        'test': [
+            'nose==1.3.7',
+        ]
+    }
 )
