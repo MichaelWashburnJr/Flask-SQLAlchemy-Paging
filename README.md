@@ -47,6 +47,12 @@ So why would you want to page your API requests?
 
 ## Usage
 
+### Installation
+
+```
+pip install flask_sqlalchemy_paging
+```
+
 ### Decorator
 The best way to use Flask-SQLAlchemy-Paging is by using the decorator provided.
 
