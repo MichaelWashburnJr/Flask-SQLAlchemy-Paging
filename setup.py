@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='flask_sqlalchemy_paging',
-    version='0.0.2',
+    version='0.0.3',
     description='Painless Paging with Flask and SQLAlchemy',
     author='Michael Washburn Jr',
     author_email='michael@michaelwashburnjr.com',
