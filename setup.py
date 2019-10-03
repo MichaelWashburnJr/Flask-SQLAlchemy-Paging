@@ -14,7 +14,7 @@ setup(
         'Flask-RESTful==0.3.6',
         'Flask-SQLAlchemy==2.3.2',
         'SQLAlchemy==1.2.2',
-        'requests==2.18.4',
+        'requests==2.20.0',
     ],
     extras_require={
         'test': [
